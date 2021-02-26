@@ -16,7 +16,7 @@ jobs:
       - name: 🚀 Build and push to Github Container Registry
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: ${{ github.repository }}
+          image: ${{ github.event.repository.name }}
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.CR_PAT }} 
