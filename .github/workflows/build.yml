@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-2019
     steps:
       - name: ⤵️ Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: 🚀 Build and push to Github Container Registry
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
