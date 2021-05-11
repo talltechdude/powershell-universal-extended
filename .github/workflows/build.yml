@@ -14,7 +14,7 @@ jobs:
       - name: ⤵️ Check out code
         uses: actions/checkout@v2
       - name: 🚀 Build and push to Github Container Registry
-        uses: mr-smithers-excellent/docker-build-push@v5
+        uses: mr-smithers-excellent/docker-build-push@v5.4
         with:
           image: ${{ github.event.repository.name }}
           registry: ghcr.io
