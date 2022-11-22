@@ -1,4 +1,4 @@
-FROM ironmansoftware/universal:1.5.12-windowsserver-1909
+FROM ironmansoftware/universal:2.7.3-windowsserver-1909
 
 # Switch to PowerShell
 SHELL ["powershell", "-C"]
